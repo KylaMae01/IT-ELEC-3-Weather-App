@@ -48,23 +48,23 @@ function showWeatherReport(weather){
 
     
     if(weatherType.textContent == 'Clear') {
-        document.body.style.backgroundImage = "url('images/clear.jpg')";
+        document.body.style.backgroundImage = "url('images/Clear Weather.jpg')";
         
     } else if(weatherType.textContent == 'Clouds') {
 
-        document.body.style.backgroundImage = "url('images/cloud.jpg')";
+        document.body.style.backgroundImage = "url('images/Cloud.jpg')";
         
     } else if(weatherType.textContent == 'Haze') {
 
-        document.body.style.backgroundImage = "url('images/cloud.jpg')";
+        document.body.style.backgroundImage = "url('images/Cloud.jpg')";
         
     }     else if(weatherType.textContent == 'Rain') {
         
-        document.body.style.backgroundImage = "url('images/rain.jpg')";
+        document.body.style.backgroundImage = "url('images/Rainy.jpg')";
         
     } else if(weatherType.textContent == 'Snow') {
         
-        document.body.style.backgroundImage = "url('images/snow.jpg')";
+        document.body.style.backgroundImage = "url('images/Snow.jpg')";
     
     } else if(weatherType.textContent == 'Thunderstorm') {
     
@@ -77,9 +77,7 @@ function showWeatherReport(weather){
 function dateManage(dateArg) {
 
     let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-
     let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-
     let year = dateArg.getFullYear();
     let month = months[dateArg.getMonth()];
     let date = dateArg.getDate();
